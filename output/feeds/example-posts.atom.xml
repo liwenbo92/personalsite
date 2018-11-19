@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wenbo Li - example posts</title><link href="https://liwenbo92.github.io/personalsite/" rel="alternate"></link><link href="https://liwenbo92.github.io/personalsite/feeds/example-posts.atom.xml" rel="self"></link><id>https://liwenbo92.github.io/personalsite/</id><updated>2018-11-18T00:00:00-05:00</updated><entry><title>First Post</title><link href="https://liwenbo92.github.io/personalsite/first-post.html" rel="alternate"></link><published>2018-11-18T00:00:00-05:00</published><updated>2018-11-18T00:00:00-05:00</updated><author><name>Wenbo Li</name></author><id>tag:liwenbo92.github.io,2018-11-18:/personalsite/first-post.html</id><summary type="html">&lt;p&gt;This is the first post of a series of demonstration posts.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the first post of a series of demonstration posts. I have nothing else to say.&lt;/p&gt;</content></entry><entry><title>Fourth Post</title><link href="https://liwenbo92.github.io/personalsite/fourth-post.html" rel="alternate"></link><published>2018-11-18T00:00:00-05:00</published><updated>2018-11-18T00:00:00-05:00</updated><author><name>Wenbo Li</name></author><id>tag:liwenbo92.github.io,2018-11-18:/personalsite/fourth-post.html</id><summary type="html">&lt;p&gt;This is the fourth post of a series of posts. It will demonstrate tables.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the fourth post of a series of posts. It will demonstrate tables.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column Header&lt;/th&gt;
+&lt;th&gt;Column Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Row 1&lt;/td&gt;
+&lt;td&gt;Data 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Row 2&lt;/td&gt;
+&lt;td&gt;Data 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content></entry><entry><title>Second Post</title><link href="https://liwenbo92.github.io/personalsite/second-post.html" rel="alternate"></link><published>2018-11-18T00:00:00-05:00</published><updated>2018-11-18T00:00:00-05:00</updated><author><name>Wenbo Li</name></author><id>tag:liwenbo92.github.io,2018-11-18:/personalsite/second-post.html</id><summary type="html">&lt;p&gt;This is the second post of a series of posts. It will show how to embeded youtube video using pelican.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the second post of a series of posts. It shows an embedded youtube video. &lt;/p&gt;
+&lt;p&gt;&lt;span class="videobox"&gt;
+                &lt;iframe width="640" height="390"
+                    src='https://www.youtube.com/embed/3-bwXhts8Zg'
+                    frameborder='0' webkitAllowFullScreen mozallowfullscreen
+                    allowFullScreen&gt;
+                &lt;/iframe&gt;
+            &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To do so I followed &lt;a href="https://pythonforundergradengineers.com/how-i-built-this-site-4.html"&gt;the tutorial&lt;/a&gt;. Since some of the materials there are out of date, so I explain a little bit in the following. You could use the plugin &lt;code&gt;liquid_tags.youtube&lt;/code&gt; in &lt;code&gt;pelicanconf.py&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#pelicanconf.py&lt;/span&gt;
+
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;liquid_tags.youtube&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then include the following line in your post &lt;code&gt;second_post.md&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;{% youtube Qq-5frjUfK0 [640] [390] %}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Notice here the difference between the one in &lt;a href="https://pythonforundergradengineers.com/how-i-built-this-site-4.html"&gt;the tutorial&lt;/a&gt; and the above is that I only write the video id for the youtube video instead of the full https address.&lt;/p&gt;</content></entry></feed>

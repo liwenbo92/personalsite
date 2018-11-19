@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Welcome to Wenbo Li's Personal Website - Wenbo Li</title>
+    <title>Search - Wenbo Li
+</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,16 +10,15 @@
 
 
 
-<link rel="canonical" href="https://liwenbo92.github.io/personalsite/">
 
         <meta name="author" content="Wenbo Li" />
-        <meta name="description" content="Thank you for visiting. Welcome!" />
 
-    <meta property="og:site_name" content="Wenbo Li" />
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Welcome to Wenbo Li&#39;s Personal Website"/>
-    <meta property="og:url" content="https://liwenbo92.github.io/personalsite/"/>
-    <meta property="og:description" content="Thank you for visiting. Welcome!" />
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Wenbo Li" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Wenbo Li"/>
+        <meta property="og:url" content="https://liwenbo92.github.io/personalsite"/>
+        <meta property="og:description" content="Wenbo Li"/>
 
 
 
@@ -77,13 +77,7 @@ Wenbo Li            </a>
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-    <section id="content" class="body">
-        <h1 class="entry-title">Welcome to Wenbo Li's Personal Website</h1>
-        
-        <div class="entry-content">
-            <p>Thank you for visiting. Welcome!</p>
-        </div>
-    </section>
+<div id="tipue_search_content"></div>
         </div>
     </div>
 </div>
@@ -113,5 +107,17 @@ Wenbo Li            </a>
 
 
 
+    <script type="text/javascript" src="https://liwenbo92.github.io/personalsite/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="https://liwenbo92.github.io/personalsite/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'mode' : 'json',
+        'show': 10,
+        'newWindow': false,
+        'contentLocation': 'tipuesearch_content.json'
+      });
+    });
+    </script>
 </body>
 </html>
