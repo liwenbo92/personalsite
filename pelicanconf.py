@@ -44,7 +44,7 @@ PLUGIN_PATHS = ['pelican-plugins']
 
 THEME = 'pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
-HIDE_SIDEBAR = True
+#HIDE_SIDEBAR = True
 #DISPLAY_TAGS_ON_SIDEBAR = False
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
@@ -60,7 +60,10 @@ PLUGINS = [
 I18N_TEMPLATES_LANG = 'en'
 
 # Social widget
-#SOCIAL = (('github', 'https://github.com/liwenbo92'))
+SOCIAL = (('github', 'https://github.com/liwenbo92'))
+
+# Header image
+HEADER_IMAGE = ["/content/images/ha.jpg"]
 
 # Sidebar Images
 #SIDEBAR_IMAGES_HEADER = 'My Images'
